@@ -5,7 +5,7 @@ from io import BytesIO
 import os
 
 
-TOKEN = "8749732051:AAHpdrCYqFp1rULbY8Ouqz51KVnXHtVsHfM"
+TOKEN = 8749732051:AAHpdrCYqFp1rULbY8Ouqz51KVnXHtVsHfM
 
 if not TOKEN:
     raise Exception("TOKEN is missing! Set it in Railway Variables.")
