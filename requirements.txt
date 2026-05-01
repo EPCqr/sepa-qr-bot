@@ -1,2 +1,2 @@
-python-telegram-bot
-qrcode[pil]
+python-telegram-bot==20.7
+qrcode[pil]==7.4.2
