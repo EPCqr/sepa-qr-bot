@@ -5,8 +5,10 @@ from io import BytesIO
 import os
 
 
+TOKEN = os.getenv("TOKEN")
 
-TOKEN = os.getenv("8749732051:AAHpdrCYqFp1rULbY8Ouqz51KVnXHtVsHfM")
+if not TOKEN:
+    raise Exception("TOKEN is missing! Set it in Railway Variables.")
 
 def build_epc_qr(iban, name, amount, reference):
     amount_str = f"EUR{float(amount):.2f}"
