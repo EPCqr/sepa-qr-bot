@@ -5,7 +5,7 @@ from io import BytesIO
 import os
 
 
-TOKEN = os.getenv("TOKEN")
+TOKEN = os.getenv("THETOKEN")
 
 if not TOKEN:
     raise Exception("TOKEN is missing! Set it in Railway Variables.")
